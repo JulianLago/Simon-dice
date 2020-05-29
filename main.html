@@ -10,29 +10,32 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
+
+
 <div class="container-fluid">
   <h1 id="header">SIMON</h1>
 </div>
 
-<div class="container-fluid" >
-  <div class="row" id="row-hud">
-    <div class="column" id="hud-turno">Turno: </div>
-    <div class="column" id="hud-ronda">Ronda #</div>  
-  </div>
 
-<div class="container-fluid" id="cuadros">
-  <div class="row" id="row1">
-    <div id="cuadro-1"   class="column" ></div>
-    <div id="cuadro-2"   class="column" ></div>
-  </div>
-  <div class="row" id="row2">
-    <div id="cuadro-3"  class="cuadros"></div>
-    <div id="cuadro-4"  class="cuadros"></div>
+<div class="container-fluid" id="contenedor">
+ <div class="container" id="left-cont">
+       <div class="row" id="hud-turno" class="hud">Turno</div>
+       <div class="row" id="cuadro-1" class="cuadros" >Cuadro1</div>
+       <div class="row" id="cuadro-3" class="cuadros">Cuadro3</div>
+ </div>
+ 
+ <div class="container" id="right-cont">
+        <div class="row" id="hud-ronda" class="hud">Ronda</div> 
+        <div class="row" id="cuadro-2" class="cuadros">Cuadro2</div> 
+        <div class="row" id="cuadro-4" class="cuadros">Cuadro4</div> 
+ </div>
     
-  </div>
 </div>
 
-</div>
+
+
+
+
 
 
 

@@ -1,15 +1,20 @@
+body{
+    background-image: linear-gradient( white, gray);
+}
+
 #cuadro-1{
-    background-color:purple;
+    margin: 5px;
+    background-color: orange;
     width:300px;
     height: 300px;
 
     border-top-left-radius: 50%;
     border-top-right-radius: 25%;
-    border-bottom-right-radius: 0%;
-    border-bottom-left-radius: 25%;
-    
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 25%;  
 }
 #cuadro-2{
+    margin: 5px;
     background-color:green;
     width:300px;
     height: 300px;
@@ -17,41 +22,72 @@
     border-top-left-radius: 25%;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 25%;
-    border-bottom-left-radius: 0%;
-    
+    border-bottom-left-radius: 5%; 
 }
 #cuadro-3{
+    margin: 5px;
     background-color: blue;
     width:300px;
     height: 300px;
 
     border-top-left-radius: 25%;
-    border-top-right-radius: 0%;
+    border-top-right-radius: 5%;
     border-bottom-right-radius: 25%;
     border-bottom-left-radius: 50%;
-    
 }
 #cuadro-4{
-    
+    margin: 5px;
     background-color:red;
     width:300px;
     height: 300px;
 
-    border-top-left-radius: 0%;
+    border-top-left-radius: 5%;
     border-top-right-radius: 25%;
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 25%;
+}
+#header{
+    text-align: left;
+    margin: 15px;
+    font-family: Monoton,Arial, Helvetica, sans-serif;
+    font-size: 5rem;
     
 }
-.cuadros{
-    margin:15px;
-    
+#row-hud{
+    width: 100%;
+   
+    margin:auto;
 }
-#estado-juego{
-    
-    font-size: 32pt;
-    margin: 50px;
-    background-color: gray;
-    width: 500px;
-    height: 100px;
+#hud-turno{
+   font-family: Audiowide;
+    background-image: linear-gradient(to right,rgb(179, 179, 179), rgb(110, 109, 109) );
+    width: 300px;
+    height: 50px;
+    border-width: 5px;
+    border-style: outset;
+    margin:5px;   
+    text-align: left;
+}
+#hud-ronda{
+    background-image: linear-gradient(to left,rgb(179, 179, 179), rgb(110, 109, 109) );
+    width: 300px;
+    height: 50px;
+    border-width: 5px;
+    border-style: outset;
+    font-family: Audiowide;
+    margin:5px;
+    text-align: left;
+}
+#cuadros{
+    width: 650px;
+    margin:5px;
+    border-radius: 50%;
+}
+#row1{
+    width: 100%;
+    margin:auto;
+}
+#row2{
+    width: 100%;
+    margin:auto;
 }
