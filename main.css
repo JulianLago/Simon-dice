@@ -1,0 +1,57 @@
+#cuadro-1{
+    background-color:purple;
+    width:300px;
+    height: 300px;
+
+    border-top-left-radius: 50%;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 25%;
+    
+}
+#cuadro-2{
+    background-color:green;
+    width:300px;
+    height: 300px;
+
+    border-top-left-radius: 25%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 25%;
+    border-bottom-left-radius: 0%;
+    
+}
+#cuadro-3{
+    background-color: blue;
+    width:300px;
+    height: 300px;
+
+    border-top-left-radius: 25%;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 25%;
+    border-bottom-left-radius: 50%;
+    
+}
+#cuadro-4{
+    
+    background-color:red;
+    width:300px;
+    height: 300px;
+
+    border-top-left-radius: 0%;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 25%;
+    
+}
+.cuadros{
+    margin:15px;
+    
+}
+#estado-juego{
+    
+    font-size: 32pt;
+    margin: 50px;
+    background-color: gray;
+    width: 500px;
+    height: 100px;
+}
