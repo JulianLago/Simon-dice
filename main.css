@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient( white, gray);
+    background-image:url(img/AstronautSynthwave.jpg);
 }
 
 #cuadro-1{
@@ -47,6 +47,8 @@ body{
     border-bottom-left-radius: 25%;
 }
 #header{
+    
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #391a9c, 0 0 40px #391a9c, 0 0 50px #391a9c, 0 0 60px #391a9c, 0 0 70px #391a9c;
     text-align: left;
     margin: 15px;
     font-family: Monoton,Arial, Helvetica, sans-serif;
@@ -79,15 +81,33 @@ body{
     text-align: left;
 }
 #cuadros{
+    
+    position: relative;
+    left: 650px;
     width: 650px;
     margin:5px;
     border-radius: 50%;
 }
 #row1{
-    width: 100%;
+
+    width:100%;
     margin:auto;
 }
 #row2{
     width: 100%;
     margin:auto;
+}
+#background-cuadros{
+    z-index: -1;
+    position: absolute;
+    width: 750px;
+    height: 750px;
+    background-color: black;
+    border-radius: 50%;
+    bottom: 75px;
+    left: 620px;
+    align
+    display:flex;
+    
+
 }
