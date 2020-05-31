@@ -1,10 +1,39 @@
-body{
-    background-image:url(img/AstronautSynthwave.jpg);
-}
-
+html,body{
+    background-image:url(img/synthCity.png);
+    background-size: 105%;     
+    -moz-background-size: 100% 100%;  
+    }
+#background-cuadros{
+    display: flex;
+    z-index: -1;
+    width: 750px;
+    height: 750px;
+    background-image: radial-gradient( #450074f6,rgba(42, 0, 82, 0.808));
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 5px;
+    border-color:black;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+  }
+.cuadros{
+      opacity: 0.5;
+      
+      border-style: solid;
+      border-width: 5px;
+      border-color: black;
+  }
+  .cuadro-seleccionado{
+      border-style: solid;
+      border-width: 5px;
+      border-color: aqua;
+  }
 #cuadro-1{
     margin: 5px;
-    background-color: orange;
+    background-image:linear-gradient(to bottom right, orange,rgba(173, 113, 0, 0.972));
     width:300px;
     height: 300px;
 
@@ -15,7 +44,7 @@ body{
 }
 #cuadro-2{
     margin: 5px;
-    background-color:green;
+    background-image:linear-gradient(to bottom left,rgb(0, 165, 0),rgb(0, 75, 0));
     width:300px;
     height: 300px;
 
@@ -26,7 +55,8 @@ body{
 }
 #cuadro-3{
     margin: 5px;
-    background-color: blue;
+    background-image:linear-gradient(to top right,blue,rgb(0, 0, 117));
+    
     width:300px;
     height: 300px;
 
@@ -37,7 +67,7 @@ body{
 }
 #cuadro-4{
     margin: 5px;
-    background-color:red;
+    background-image:linear-gradient(to top left,red,rgb(131, 0, 0));
     width:300px;
     height: 300px;
 
@@ -46,68 +76,76 @@ body{
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 25%;
 }
+#cont-header{
+  width: 100%;
+  margin-top: 0px;
+}
 #header{
-    
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #391a9c, 0 0 40px #391a9c, 0 0 50px #391a9c, 0 0 60px #391a9c, 0 0 70px #391a9c;
+    text-shadow: 0 0 10px rgb(199, 79, 255), 0 0 20px white, 0 0 30px #391a9c, 0 0 40px #391a9c, 0 0 50px #391a9c, 0 0 60px #391a9c, 0 0 70px #391a9c;
     text-align: left;
-    margin: 15px;
+    margin-left:25px ;
     font-family: Monoton,Arial, Helvetica, sans-serif;
-    font-size: 5rem;
-    
+    font-size:60pt ;
+    color: rgba(0, 68, 255, 0.924);
+}
+#estado{
+   position: absolute;
+    margin-left:25px;
+    text-shadow: 0 0 10px rgb(199, 79, 255), 0 0 20px white, 0 0 30px #391a9c, 0 0 40px #391a9c, 0 0 50px #391a9c, 0 0 60px #391a9c, 0 0 70px #391a9c;
+    font-family: Monoton;
+    text-shadow: blueviolet;
+    font-style: italic;
+    font-size:30pt ;
+    color: rgb(60, 0, 255);
+
 }
 #row-hud{
-    width: 100%;
-   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 750px;
     margin:auto;
 }
 #hud-turno{
-   font-family: Audiowide;
-    background-image: linear-gradient(to right,rgb(179, 179, 179), rgb(110, 109, 109) );
-    width: 300px;
-    height: 50px;
-    border-width: 5px;
-    border-style: outset;
-    margin:5px;   
-    text-align: left;
-}
-#hud-ronda{
-    background-image: linear-gradient(to left,rgb(179, 179, 179), rgb(110, 109, 109) );
-    width: 300px;
-    height: 50px;
+    background-image: linear-gradient(to left,rgb(235, 164, 34), rgb(221, 102, 22) );
     border-width: 5px;
     border-style: outset;
     font-family: Audiowide;
-    margin:5px;
+    border-color: #d3d1d6;
+
+    width: 200px;
+    height: 50px;
+    border-bottom-left-radius: 25%;
+    border-top-right-radius: 25%;   
     text-align: left;
-}
-#cuadros{
-    
-    position: relative;
-    left: 650px;
-    width: 650px;
-    margin:5px;
-    border-radius: 50%;
-}
-#row1{
+    font-size: x-large;
+    font-style: oblique;
 
-    width:100%;
-    margin:auto;
+    margin-right: auto;
 }
-#row2{
-    width: 100%;
-    margin:auto;
-}
-#background-cuadros{
-    z-index: -1;
-    position: absolute;
-    width: 750px;
-    height: 750px;
-    background-color: black;
-    border-radius: 50%;
-    bottom: 75px;
-    left: 620px;
-    align
-    display:flex;
+#hud-ronda{
+    background-image: linear-gradient(to left,rgb(235, 164, 34), rgb(221, 102, 22) );
+    border-width: 5px;
+    border-style: outset;
+    border-color: #d3d1d6;;
+    font-family: Audiowide;
     
-
+    width: 200px;
+    height: 50px;
+    text-align: left;
+    font-size: x-large;
+    font-style: oblique;
+    border-bottom-left-radius: 25%;
+    border-top-right-radius: 25%;
+    margin-left: auto;
 }
+#boton{
+    background-image: linear-gradient(to left,rgb(235, 164, 34), rgb(221, 102, 22) );
+    border-width: 5px;
+    border-style: outset;
+    font-family: Audiowide;
+
+   
+}
+
+
