@@ -77,8 +77,9 @@ html,body{
     border-bottom-left-radius: 25%;
 }
 #cont-header{
-  width: 100%;
-  margin-top: 0px;
+    display: flex;
+    width: 100%;
+    margin-top: 0px;
 }
 #header{
     text-shadow: 0 0 10px rgb(199, 79, 255), 0 0 20px white, 0 0 30px #391a9c, 0 0 40px #391a9c, 0 0 50px #391a9c, 0 0 60px #391a9c, 0 0 70px #391a9c;
@@ -89,16 +90,17 @@ html,body{
     color: rgba(0, 68, 255, 0.924);
 }
 #estado{
-   position: absolute;
-    margin-left:25px;
+    margin: auto;
     text-shadow: 0 0 10px rgb(199, 79, 255), 0 0 20px white, 0 0 30px #391a9c, 0 0 40px #391a9c, 0 0 50px #391a9c, 0 0 60px #391a9c, 0 0 70px #391a9c;
     font-family: Monoton;
-    text-shadow: blueviolet;
+    text-shadow: rgb(137, 66, 204);
     font-style: italic;
-    font-size:30pt ;
-    color: rgb(60, 0, 255);
-
+    font-size:35pt ;
+    color: rgb(43, 194, 56);
+    
+    
 }
+
 #row-hud{
     display: flex;
     flex-direction: row;
