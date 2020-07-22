@@ -4,7 +4,7 @@ html body{
     font-family:"Press Start 2P";
     background-image: url("img/backg.png");
     background-position: center;
-    background-size: 100% 100%;
+    background-size: 100% 100vh;
     background-repeat: no-repeat;
 }
 #contenedor{
@@ -94,7 +94,7 @@ html body{
 @media screen and (max-width:800px){
     #contenedor{
         width: 75%;
-        height:auto;
+        height:75%;
     }
     #btn-play{
         width: 25%;
@@ -110,14 +110,17 @@ html body{
     }
     #juego{
         width: 100%;
-        flex-direction: row;
+        margin: auto;
     }
     .fila-cuadro{
-        width: 100%;
+        margin-right: 1em;
+        width: auto;
+        height: 22%;
     }
     .cuadro{
-        margin:0em;
-        width:50%;
+        margin: 5px;
+        max-height: 100%;
+        
     }
 }
 /*
