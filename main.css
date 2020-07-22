@@ -1,3 +1,126 @@
+html body{
+    width: 100%;
+    height: 100vh;
+    font-family:"Press Start 2P";
+    background-image: url("img/backg.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#contenedor{
+    width: 50em;
+    height: auto;
+    margin:auto;
+    margin-top: 5em;
+    background:burlywood;
+    border-radius: 5%;
+    border: 3px dashed rgb(87, 87, 87);
+}
+#header{
+    color: rgb(84, 29, 148);
+    text-align: center;
+    width: 100%;
+    font-family:"Press Start 2P";
+}
+.row{
+    justify-content: center;
+}
+#turno{
+    text-align: left;
+    width: 25%;
+}
+#btn-play{
+    width: auto;
+    background: orangered;
+    box-shadow: 2px 2px 5px black;
+}
+#ronda{
+    text-align: right;
+    width: 25%;
+ }
+#juego{ 
+    margin-left: 1em;
+    width: 100%;
+    height: 50em;
+}
+.fila-cuadro{
+    justify-content: center;
+    margin: 1em;
+    width: 100%;
+    height: 45%;
+}
+.cuadro{
+    opacity: .5;
+    margin: .5em;
+    width: 40%;
+    height: 100%;
+    border:3px solid black;
+    box-shadow: 3px 3px 5px black;
+}
+#cuadro-1{
+    background: red;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 25%;  
+}
+#cuadro-2{
+    background: blue;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 25%;
+    border-bottom-left-radius: 5%;
+}
+#cuadro-3{
+    background: green;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 25%;
+    border-bottom-left-radius: 50%;
+}
+#cuadro-4{
+    background: yellow;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 25%;
+}
+#estado{
+    color: rgb(84, 29, 148);
+    font-family: "Press Start 2P";
+    font-size: 3em;
+    margin: auto;
+}
+@media screen and (max-width:800px){
+    #contenedor{
+        width: 75%;
+        height:auto;
+    }
+    #btn-play{
+        width: 25%;
+        font-size: .8em;
+    }
+    #estado{
+        font-size: 1.2em;
+    }
+    #ronda,#turno{
+        width: 33%;
+        font-size: .7em;
+        text-align: center;
+    }
+    #juego{
+        width: 100%;
+        flex-direction: row;
+    }
+    .fila-cuadro{
+        width: 100%;
+    }
+    .cuadro{
+        margin:0em;
+        width:50%;
+    }
+}
+/*
 html,body{
     background-image:url(img/synthCity.png);
     background-size: 105%;     
@@ -5,9 +128,7 @@ html,body{
     }
 #background-cuadros{
     display: flex;
-    z-index: -1;
-    width: 750px;
-    height: 750px;
+    width: auto;
     background-image: radial-gradient( #450074f6,rgba(42, 0, 82, 0.808));
     border-radius: 50%;
     border-style: solid;
@@ -90,12 +211,14 @@ html,body{
     color: rgba(0, 68, 255, 0.924);
 }
 #estado{
-    margin: auto;
+    position: absolute;
+    left: 50%;
+    top:50%;
     text-shadow: 0 0 10px rgb(199, 79, 255), 0 0 20px white, 0 0 30px #391a9c, 0 0 40px #391a9c, 0 0 50px #391a9c, 0 0 60px #391a9c, 0 0 70px #391a9c;
     font-family: Monoton;
     text-shadow: rgb(137, 66, 204);
-    font-style: italic;
-    font-size:35pt ;
+    
+    font-size:7em;
     color: rgb(43, 194, 56);
     
     
@@ -151,3 +274,4 @@ html,body{
 }
 
 
+*/

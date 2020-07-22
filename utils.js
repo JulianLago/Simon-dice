@@ -46,14 +46,14 @@ function turnoPlayer(){
 }
 
 function desbloquearInput(){
-    const $cuadros = document.querySelectorAll(".cuadros");
+    const $cuadros = document.querySelectorAll(".cuadro");
     $cuadros.forEach(function(cuadro){
        cuadro.onclick=inputPlayer;
     });
 }
 
 function bloquearInput(){
-    const $cuadros = document.querySelectorAll(".cuadros");
+    const $cuadros = document.querySelectorAll(".cuadro");
     $cuadros.forEach(function(cuadro){
         cuadro.onclick=function(){};
     })}
@@ -125,7 +125,7 @@ function inputPlayer(e){
 
 
 function generarCuadroAleatorio(){
-        const $cuadro = document.getElementsByClassName('cuadros');
+        const $cuadro = document.getElementsByClassName('cuadro');
         let indice = Math.floor(Math.random() * $cuadro.length);
         return $cuadro[indice];
 }
@@ -146,7 +146,7 @@ function resaltarCuadro(cuadro){
 
 
 function actualizarTurno(turno){
-const $turno = document.getElementById("hud-turno");
+const $turno = document.getElementById("turno");
 $turno.innerText="Turno: " + turno;
 }
 function cambiarEstado(estado){
@@ -155,6 +155,6 @@ function cambiarEstado(estado){
 }
 
 function actualizarRonda(numeroRonda){
-let $ronda=document.getElementById("hud-ronda");
+let $ronda=document.getElementById("ronda");
 $ronda.innerText="Ronda " + numeroRonda;
 }

@@ -2,7 +2,7 @@
 
 
 
-const $boton = document.getElementById("boton");
+const $boton = document.getElementById("btn-play");
 $boton.onclick=function(){
     
     reiniciarJuego();
@@ -12,3 +12,6 @@ $boton.onclick=function(){
     empezarJuego();
 
 }
+
+let $contenedor = document.getElementById('contenedor');
+$contenedor.draggable();
