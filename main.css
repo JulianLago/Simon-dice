@@ -23,11 +23,11 @@ html body{
     font-family:"Press Start 2P";
 }
 .row{
-    justify-content: center;
+    justify-content:space-evenly;
 }
 #turno{
     text-align: left;
-    width: 25%;
+    width: 30%;
 }
 #btn-play{
     width: auto;
